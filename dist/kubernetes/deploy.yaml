@@ -256,7 +256,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 80
+    - port: 81
       targetPort: http
       protocol: TCP
       name: http
@@ -1386,7 +1386,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 80
+    - port: 81
       targetPort: http
       protocol: TCP
       name: http
