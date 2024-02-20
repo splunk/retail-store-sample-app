@@ -10,7 +10,6 @@ metadata:
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 ---
 # Source: catalog/templates/mysql-secret.yaml
 apiVersion: v1
@@ -41,7 +40,6 @@ metadata:
     app.kubernetes.io/name: catalog
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: mysql
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -65,7 +63,6 @@ metadata:
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -90,7 +87,6 @@ metadata:
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   strategy:
@@ -177,7 +173,6 @@ metadata:
     app.kubernetes.io/name: catalog
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: mysql
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   serviceName: catalog-mysql
@@ -237,7 +232,6 @@ metadata:
     app.kubernetes.io/instance: ui
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 ---
 # Source: ui/templates/configmap.yml
 apiVersion: v1
@@ -259,7 +253,6 @@ metadata:
     app.kubernetes.io/instance: ui
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: LoadBalancer
   ports:
@@ -284,7 +277,6 @@ metadata:
     app.kubernetes.io/instance: ui
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   strategy:
@@ -367,7 +359,6 @@ metadata:
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 ---
 # Source: catalog/templates/mysql-secret.yaml
 apiVersion: v1
@@ -398,7 +389,6 @@ metadata:
     app.kubernetes.io/name: catalog
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: mysql
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -422,7 +412,6 @@ metadata:
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -447,7 +436,6 @@ metadata:
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   strategy:
@@ -534,7 +522,6 @@ metadata:
     app.kubernetes.io/name: catalog
     app.kubernetes.io/instance: catalog
     app.kubernetes.io/component: mysql
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   serviceName: catalog-mysql
@@ -594,7 +581,6 @@ metadata:
     app.kubernetes.io/instance: carts
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 ---
 # Source: carts/templates/configmap.yml
 apiVersion: v1
@@ -620,7 +606,6 @@ metadata:
     app.kubernetes.io/name: carts
     app.kubernetes.io/instance: carts
     app.kubernetes.io/component: dynamodb
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -644,7 +629,6 @@ metadata:
     app.kubernetes.io/instance: carts
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -669,7 +653,6 @@ metadata:
     app.kubernetes.io/instance: carts
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   strategy:
@@ -748,7 +731,6 @@ metadata:
     app.kubernetes.io/name: carts
     app.kubernetes.io/instance: carts
     app.kubernetes.io/component: dynamodb
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   selector:
@@ -784,7 +766,6 @@ metadata:
     app.kubernetes.io/instance: orders
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 ---
 # Source: orders/templates/postgresql-secret.yaml
 apiVersion: v1
@@ -822,7 +803,6 @@ metadata:
     app.kubernetes.io/name: orders
     app.kubernetes.io/instance: orders
     app.kubernetes.io/component: postgresql
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -845,7 +825,6 @@ metadata:
     app.kubernetes.io/name: orders
     app.kubernetes.io/instance: orders
     app.kubernetes.io/component: rabbitmq
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -873,7 +852,6 @@ metadata:
     app.kubernetes.io/instance: orders
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -898,7 +876,6 @@ metadata:
     app.kubernetes.io/instance: orders
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   strategy:
@@ -989,7 +966,6 @@ metadata:
     app.kubernetes.io/name: orders
     app.kubernetes.io/instance: orders
     app.kubernetes.io/component: postgresql
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   serviceName: orders-postgresql
@@ -1045,7 +1021,6 @@ metadata:
     app.kubernetes.io/name: orders
     app.kubernetes.io/instance: orders
     app.kubernetes.io/component: rabbitmq
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   serviceName: orders-rabbitmq
@@ -1091,7 +1066,6 @@ metadata:
     app.kubernetes.io/instance: checkout
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 ---
 # Source: checkout/templates/configmap.yml
 apiVersion: v1
@@ -1112,7 +1086,6 @@ metadata:
     app.kubernetes.io/name: checkout
     app.kubernetes.io/instance: checkout
     app.kubernetes.io/component: redis
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -1136,7 +1109,6 @@ metadata:
     app.kubernetes.io/instance: checkout
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -1161,7 +1133,6 @@ metadata:
     app.kubernetes.io/instance: checkout
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   strategy:
@@ -1237,7 +1208,6 @@ metadata:
     app.kubernetes.io/name: checkout
     app.kubernetes.io/instance: checkout
     app.kubernetes.io/component: redis
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   selector:
@@ -1273,7 +1243,6 @@ metadata:
     app.kubernetes.io/instance: assets
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 ---
 # Source: assets/templates/configmap.yml
 apiVersion: v1
@@ -1294,7 +1263,6 @@ metadata:
     app.kubernetes.io/instance: assets
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: ClusterIP
   ports:
@@ -1319,7 +1287,6 @@ metadata:
     app.kubernetes.io/instance: assets
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   strategy:
@@ -1391,7 +1358,6 @@ metadata:
     app.kubernetes.io/instance: ui
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 ---
 # Source: ui/templates/configmap.yml
 apiVersion: v1
@@ -1417,7 +1383,6 @@ metadata:
     app.kubernetes.io/instance: ui
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   type: LoadBalancer
   ports:
@@ -1442,7 +1407,6 @@ metadata:
     app.kubernetes.io/instance: ui
     app.kubernetes.io/component: service
     app.kuberneres.io/owner: retail-store-sample
-    app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
   strategy:
